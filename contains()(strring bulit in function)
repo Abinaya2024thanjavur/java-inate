@@ -1,0 +1,13 @@
+mport java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+        StringBuilder sb = new StringBuilder("Hello World");
+
+        if (sb.toString().contains("World")) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not Found");
+        }
+    }
+}
