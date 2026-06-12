@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int num = 1234;
+        System.out.println("Integer: " + num);
+        String str = String.valueOf(num);
+        System.out.println("String: " + str);
+        int number = Integer.parseInt(str);
+        System.out.println("Integer Again: " + number);
+        List<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i < str.length(); i++) {
+            list.add(str.charAt(i) - '0');
+        }
+
+        System.out.println("List: " + list);
+    }
+}
