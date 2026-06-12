@@ -1,0 +1,37 @@
+//is empty()
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> x = new ArrayList<>();
+
+        System.out.println(x.isEmpty());
+    }
+}
+
+//retain all()
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> x = new ArrayList<>();
+        x.add(1);
+        x.add(2);
+        x.add(3);
+        x.add(4);
+
+        ArrayList<Integer> y = new ArrayList<>();
+        y.add(3);
+        y.add(4);
+        y.add(5);
+        y.add(6);
+
+        x.retainAll(y);
+
+        System.out.println(x);
+    }
+}
+
+//
