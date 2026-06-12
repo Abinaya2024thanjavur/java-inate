@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        String str = "Java Java Python";
+
+        String result = str.replaceFirst("Java", "C");
+
+        System.out.println(result);
+    }
+}
