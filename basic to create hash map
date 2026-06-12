@@ -1,0 +1,65 @@
+import java.util.HashMap;
+public class Main {
+    public static void main(String[] args) {
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "abi");
+        map.put(2, "anu");
+        map.put(3, "magi");
+        System.out.println(map);
+    }
+}
+
+//add()
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> x = new HashMap<>();
+
+        x.put(1, "abi");
+        x.put(2, "anu");
+        x.put(3, "magi");
+
+        System.out.println(x);
+    }
+}
+//remove()
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> x = new HashMap<>();
+
+        x.put(1, "abi");
+        x.put(2, "anu");
+        x.put(3, "magi");
+
+        x.remove(2);
+
+        System.out.println(x);
+    }
+}
+
+//using hash function to print valid and invaid password
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, String> users = new HashMap<>();
+        users.put("abi", "1234");
+        users.put("anu", "5678");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Username: ");
+        String username = sc.nextLine();
+        System.out.print("Enter Password: ");
+        String password = sc.nextLine();
+        if (users.containsKey(username) &&
+            users.get(username).equals(password)) {
+                System.out.println("Welcome Page");
+        } else {
+            System.out.println("Invalid Username or Password");
+        }
+    }
+}
