@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        HashMap<String, ArrayList<String>> map = new HashMap<>();
+
+        ArrayList<String> amazon = new ArrayList<>();
+        amazon.add("Laptop");
+        amazon.add("Mobile");
+        amazon.add("Headphones");
+
+        ArrayList<String> flipkart = new ArrayList<>();
+        flipkart.add("TV");
+        flipkart.add("Watch");
+        flipkart.add("Camera");
+
+        map.put("amazon", amazon);
+        map.put("flipkart", flipkart);
+
+        System.out.println("Amazon Products: " + map.get("amazon"));
+        System.out.println("Flipkart Products: " + map.get("flipkart"));
+    }
+}
