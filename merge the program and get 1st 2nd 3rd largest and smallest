@@ -1,0 +1,15 @@
+import java.util.*;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {0, -1, 2, -3, 1, 1, -2, 1, 0, 5};
+        Arrays.sort(arr);
+        System.out.println("1st Smallest = " + arr[0]);
+        System.out.println("2nd Smallest = " + arr[1]);
+        System.out.println("3rd Smallest = " + arr[2]);
+        int n = arr.length;
+        System.out.println("1st Largest = " + arr[n - 1]);
+        System.out.println("2nd Largest = " + arr[n - 2]);
+        System.out.println("3rd Largest = " + arr[n - 3]);
+    }
+}
