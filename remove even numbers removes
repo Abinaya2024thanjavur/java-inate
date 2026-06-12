@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> x = new ArrayList<>();
+
+        x.add(1);
+        x.add(2);
+        x.add(3);
+        x.add(4);
+        x.add(5);
+        x.add(6);
+
+        for (int i = 0; i < x.size(); i++) {
+            if (x.get(i) % 2 == 0) {
+                x.remove(i);
+                i--; // adjust index after removal
+            }
+        }
+
+        System.out.println(x);
+    }
+}
