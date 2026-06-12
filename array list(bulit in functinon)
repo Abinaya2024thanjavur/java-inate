@@ -1,0 +1,64 @@
+//x.add()
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> x = new ArrayList<>();
+
+        x.add("Java");
+        x.add("Python");
+
+        System.out.println(x);
+    }
+}
+
+//x.remove()
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> x = new ArrayList<>();
+
+        x.add("Java");
+        x.add("Python");
+
+        x.remove("Java");
+
+        System.out.println(x);
+    }
+}
+
+//x.set()
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> x = new ArrayList<>();
+
+        x.add("Java");
+        x.add("Python");
+
+        x.set(0, "C");
+
+        System.out.println(x);
+    }
+}
+
+//x.add()
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> x = new ArrayList<>();
+
+        x.add("Java");
+        x.add("Python");
+        x.add("C");
+
+        System.out.println(x);
+    }
+}
